@@ -4,9 +4,17 @@ The Buckeye CTF has ended and I could not do much. Oh well, we go again another 
 
 ## Mystery text
 
+![image alt](https://github.com/bakel243687/CTF/blob/5a796317c8fdb12f9edd2d879a3aad2baac8cbfe/Buckeye/Images/Buckeye25/Screenshot_2025-11-10_13-51-19.png)
+
 This task involved a .txt file which had a combination of (+-><[].). I've come across this before and realized that is is Brain Fuck code. You can read on it later, I wasn't the one that gave a programming language that name.
 
 The task was simple, Decodes the message.
+
+![image alt](https://github.com/bakel243687/CTF/blob/5a796317c8fdb12f9edd2d879a3aad2baac8cbfe/Buckeye/Images/Buckeye25/Screenshot_2025-11-10_13-51-58.png)
+
+![image alt](https://github.com/bakel243687/CTF/blob/5a796317c8fdb12f9edd2d879a3aad2baac8cbfe/Buckeye/Images/Buckeye25/Screenshot_2025-11-10_13-52-09.png)
+
+![image alt](https://github.com/bakel243687/CTF/blob/5a796317c8fdb12f9edd2d879a3aad2baac8cbfe/Buckeye/Images/Buckeye25/Screenshot_2025-11-10_13-52-19.png)
 
 I went to an online compiler for the language as I haven't setup mine. Upon running the code, I got a long hex string as output which upon decryption with Cybershef, I got a base64 cipher which I still did to Cyberchef
 
