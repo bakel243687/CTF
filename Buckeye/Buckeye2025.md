@@ -52,7 +52,7 @@ fastify.get('/ebj13', async (req, reply) => {
   }
 });
 
-
+fastify.get('/admin', async (req, reply) => {
     if (req.ip === "127.0.0.1" || req.ip === "::1" || req.ip === "::ffff:127.0.0.1") {
       return reply.type('text/html').send(`Hello self! The flag is ${FLAG}.`)
     }
@@ -68,8 +68,5 @@ fastify.listen({ port: 3000, host: '0.0.0.0' }, (err, address) => {
 
 The site required inputting the url of any site into the provided text field which would give us the ROT13 text format of the site. looking at the code above, we would see the part ```fastify.get('/ebj13', async (req, reply)``` gets the inputted url and returns the site as ROT13. The search bar of the browser would have the /ebj13?url="Your inputted url"
 
-If we look at the part of the javascript code that has 
-
-fastify.get('/ebj13', async (req, reply) => {
-  const { url } = req.query;
+If we look at the part of the javascript code that has ```fastify.get('/admin', async (req, reply) => {``` we would notice that the if statement outputs the flag only when the endpoint is /admin?url=localhost (127.0.0.1 or ::1 or ::ffff:127.0.0.1). This is the key to the logic that outputs the flag.
 
